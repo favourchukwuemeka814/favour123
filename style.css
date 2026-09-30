@@ -1,0 +1,227 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e5eaff;
+    color: #1f2f56;
+}
+
+/* Main background */
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 15px;
+}
+
+/* Order summary card */
+.card {
+    width: 100%;
+    max-width: 410px;
+    background-color: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(31, 47, 86, 0.08);
+}
+
+/* Illustration area */
+.hero {
+    height: 200px;
+    background-color: #3825d0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music-notes {
+    position: absolute;
+    color: #d8cfff;
+    font-size: 32px;
+    letter-spacing: 15px;
+    opacity: 0.7;
+}
+
+/* Simple person illustration */
+.person {
+    position: relative;
+    width: 130px;
+    height: 150px;
+    margin-top: 45px;
+}
+
+.head {
+    position: absolute;
+    width: 48px;
+    height: 55px;
+    background: #f6f3ff;
+    border-radius: 50%;
+    top: 8px;
+    left: 42px;
+    z-index: 2;
+    border: 3px solid #c5bfff;
+}
+
+.body {
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    background: #63e4c0;
+    top: 58px;
+    left: 30px;
+    border-radius: 25px 25px 0 0;
+    transform: rotate(-5deg);
+}
+
+.arm {
+    position: absolute;
+    width: 18px;
+    height: 75px;
+    background: #63e4c0;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.arm-left {
+    top: -8px;
+    left: 24px;
+    transform: rotate(40deg);
+    transform-origin: bottom;
+}
+
+.arm-right {
+    top: 25px;
+    right: 5px;
+    transform: rotate(-55deg);
+    transform-origin: top;
+}
+
+/* Card content */
+.content {
+    padding: 35px 40px 40px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #7280a7;
+    margin-bottom: 25px;
+}
+
+/* Annual plan box */
+.plan {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #f7f8ff;
+    padding: 18px 15px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+}
+
+.music-icon {
+    width: 45px;
+    height: 45px;
+    background-color: #e0e5ff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #3825d0;
+}
+
+.plan-info {
+    text-align: left;
+    flex: 1;
+}
+
+.plan-info h2 {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.plan-info p {
+    font-size: 14px;
+    color: #7280a7;
+}
+
+.change {
+    font-size: 13px;
+    font-weight: bold;
+    color: #3825d0;
+}
+
+.change:hover {
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+/* Payment button */
+.payment {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #3825d0;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 12px 20px rgba(56, 37, 208, 0.2);
+}
+
+.payment:hover {
+    background-color: #766cf1;
+}
+
+/* Cancel order link */
+.cancel {
+    display: inline-block;
+    margin-top: 28px;
+    color: #7280a7;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.cancel:hover {
+    color: #1f2f56;
+}
+
+/* Mobile responsive design */
+@media (max-width: 450px) {
+    .card {
+        max-width: 340px;
+    }
+
+    .hero {
+        height: 170px;
+    }
+
+    .content {
+        padding: 30px 24px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}
